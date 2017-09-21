@@ -134,6 +134,7 @@ management:
 
 security:
   basic:
+    enabled: false
 ---------------------------------------------------------------------
 
 == Run the _cloud-native-spring_ Application and verify dynamic config is working
@@ -222,7 +223,7 @@ $ cf push -f manifest.yml
 
 . Test your application by navigating to the root URL of the application, which will invoke the hello() service.  You should now see a greeting that is read from the cloud config server!
 +
-Bon Jour World!
+Guten Tag World!
 
 . What just happened??  A Spring component within the Spring Cloud Starter Config Client module called a _service connector_ automatically detected that there was a Cloud Config service bound into the application.  The service connector configured the application automatically to connect to the cloud config server and download the configuration and wire it into the application
 
@@ -230,7 +231,7 @@ Bon Jour World!
 +
 [source, yaml]
 ---------------------------------------------------------------------
-greeting: Bon Jour
+greeting: Guten Tag
 ---------------------------------------------------------------------
 
 . Next we'll learn how to register our service with a service registry and load balance requests using Spring Cloud components.
