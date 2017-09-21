@@ -130,7 +130,7 @@ $ mvn install
 $ cf push -f manifest.yml
 ---------------------------------------------------------------------
 
-. If we now test our application URLs we will no change.  However, if we view the Service Registry dashboard (accessible from the _manage_ link in Apps Manager) you will see that a service named cloud-native-spring has registered:
+. If we now test our application URLs we will not change.  However, if we view the Service Registry dashboard (accessible from the _manage_ link in Apps Manager) you will see that a service named cloud-native-spring has registered:
 +
 image::images/registry2.jpg[]
 
